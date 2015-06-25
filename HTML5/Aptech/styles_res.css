@@ -1,0 +1,74 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  top: 100px;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: url(http://mattgrossdesign.com/raw-media/first-frame-screencap.jpg) #333;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Oswald, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 10px  rgba(15, 15, 15, 0.4);
+  color: rgba(186, 35, 35, 1);
+  padding-left: 10%;
+  z-index: 950;
+}
+
+
+section {
+  top: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+section.content {
+  position: relative;
+  top: 
+  height: 50%;
+  width: 100%;
+  background: white;
+}
+
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  left: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -1000;
+}
+
+article {
+/*  just a fancy border  */
+  position: absolute;
+  top: inherit;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+
+h1.inset {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-size: 2em;
+  letter-spacing: 6px;
+  color: #ffffff; //#383333;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Thumbnail</title>
+  <style>
+    body { margin:0;
+    padding: 40px 40px;
+    background: #fff;
+    font:70% Arial;
+    color: #555;
+    line-height:100%; }
+    
+    h1,h2 { font-size: 180%; font-weight:normal; color: #555; }
+    
+    p { margin: 1em 0; }
+    
+    p.text { width: 500px; }
+    
+    a { color: #f20; text-decoration: none; }
+    
+    a:hover { color: #999; }
+
+    img { border: none; }
+    
+    /* thumbnail list */
+    
+    ul#thumbs, ul#thumbs li { margin:0; padding:0; list-style:none; }
+    
+    ul#thumbs li { float:left; margin-right:0px;
+                   border:1px solid #999; padding:2px; }
+    
+    ul#thumbs a{ display: block; float: left; width: 125px; height: 135px;
+                 line-height: 50px; overflow: hidden;
+                 position: relative; z-index:1; }
+    
+    ul#thumbs a img { float: left; position: absolute; top: 0; left: 0;
+                      width: 125px; height: 135px; }
+    
+
+    /* Mouse over */
+    ul#thumbs a:hover { overflow: visible; z-index: 1000; border: none; }
+    
+    ul#thumbs a:hover img { border: 1px solid #999; background: #fff; padding:2px;
+                            width: 150px; height: 160px; }
+    
+
+    /* clearing floats */
+    ul#thumbs:after, li#thumbs:after {
+        content:"."; display: inline; height: 0; clear: both; visibility: hidden; }
+    
+    ul#thumbs, li#thumbs { display: block; }
+    
+    ul#thumbs, li#thumbs { min-height: 1%; }
+    
+    * html ul#thumbs, * html li#thumbs { height: 1%; }
+                                            
+    
+  </style>
+</head>
+
+<body>
+
+<h2>Thumbnail</h2>
+
+<ul id="thumbs">
+ <li>
+   <a href="images/me.jpg" target="_blank">
+     <img src="images/me.jpg">
+   </a>
+ </li>
+</ul> Some text here.
+</body>
+</html>

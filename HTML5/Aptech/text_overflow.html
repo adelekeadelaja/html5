@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <title>Text-Overflow</title>
+  <style>
+    body { width: 90%; margin: 0 auto;}
+    
+
+    article {
+         float: left; 
+         height: 25rem; width: 25%;
+         margin: 1rem; padding: 2rem;
+         overflow: hidden;
+         border: 1px solid #ccc;
+         text-overflow: ellipsis;
+    }
+    
+    p.overflow-clip { 
+         text-overflow: clip;
+         overflow: hidden;
+         white-space: nowrap; 
+    }
+
+    p.overflow-ellipsis {
+         text-overflow: ellipsis;
+         overflow: hidden;
+         white-space: nowrap;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Text-Overflow: Clip or Ellipsis</h1>
+
+<article>
+<h3>No text-overflow</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sapien mauris, ac interdum arcu pulvinar sed. Pellentesque sed porttitor ipsum, vitae tempus tellus. Nullam porttitor augue ut felis porta aliquam. Praesent a fringilla metus. Nulla a lacinia felis, porta pretium sapien. Nulla enim justo, scelerisque volutpat nisi a, dapibus interdum est. Sed non fermentum mi. Mauris commodo congue justo, quis iaculis purus iaculis id. Mauris odio dui, facilisis a nisl id, tempus placerat est. Duis fringilla mi eleifend lorem porta ornare. Maecenas quis vestibulum lorem, vitae auctor enim. Pellentesque sed consequat arcu, id pharetra lorem. Nunc nec orci elementum, porta magna a, sodales diam. Cras laoreet ac ante a varius. Mauris elementum lacinia maximus.
+</p>
+<p>Vivamus in rhoncus sem. Quisque a arcu hendrerit, egestas velit et, vulputate nulla. Sed tempus a arcu non consequat. Nam quam odio, hendrerit quis consectetur vel, pharetra a urna. Nam ut tristique tortor. Aliquam ac lobortis dolor. Nunc ullamcorper risus non facilisis aliquam. Cras dapibus ut dolor ut eleifend. Nam mattis ligula pretium, maximus lorem at, pretium nunc. Mauris at nulla porta velit bibendum fermentum.
+</p>
+   </article>
+
+
+<article>
+<h3>text-overflow: clip</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sapien mauris, ac interdum arcu pulvinar sed. Pellentesque sed porttitor ipsum, vitae tempus tellus. Nullam porttitor augue ut felis porta aliquam. Praesent a fringilla metus. Nulla a lacinia felis, porta pretium sapien. Nulla enim justo, scelerisque volutpat nisi a, dapibus interdum est. Sed non fermentum mi. Mauris commodo congue justo, quis iaculis purus iaculis id. Mauris odio dui, facilisis a nisl id, tempus placerat est. Duis fringilla mi eleifend lorem porta ornare. Maecenas quis vestibulum lorem, vitae auctor enim. Pellentesque sed consequat arcu, id pharetra lorem. Nunc nec orci elementum, porta magna a, sodales diam. Cras laoreet ac ante a varius. Mauris elementum lacinia maximus.
+</p>
+<p class="overflow-clip">Vivamus in rhoncus sem. Quisque a arcu hendrerit, egestas velit et, vulputate nulla. Sed tempus a arcu non consequat. Nam quam odio, hendrerit quis consectetur vel, pharetra a urna. Nam ut tristique tortor. Aliquam ac lobortis dolor. Nunc ullamcorper risus non facilisis aliquam. Cras dapibus ut dolor ut eleifend. Nam mattis ligula pretium, maximus lorem at, pretium nunc. Mauris at nulla porta velit bibendum fermentum.
+</p>
+   </article>
+
+
+<article>
+<h3>text-overflow: ellipsis</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis sapien mauris, ac interdum arcu pulvinar sed. Pellentesque sed porttitor ipsum, vitae tempus tellus. Nullam porttitor augue ut felis porta aliquam. Praesent a fringilla metus. Nulla a lacinia felis, porta pretium sapien. Nulla enim justo, scelerisque volutpat nisi a, dapibus interdum est. Sed non fermentum mi. Mauris commodo congue justo, quis iaculis purus iaculis id. Mauris odio dui, facilisis a nisl id, tempus placerat est. Duis fringilla mi eleifend lorem porta ornare. Maecenas quis vestibulum lorem, vitae auctor enim. Pellentesque sed consequat arcu, id pharetra lorem. Nunc nec orci elementum, porta magna a, sodales diam. Cras laoreet ac ante a varius. Mauris elementum lacinia maximus.
+</p>
+<p class="overflow-ellipsis">Vivamus in rhoncus sem. Quisque a arcu hendrerit, egestas velit et, vulputate nulla. Sed tempus a arcu non consequat. Nam quam odio, hendrerit quis consectetur vel, pharetra a urna. Nam ut tristique tortor. Aliquam ac lobortis dolor. Nunc ullamcorper risus non facilisis aliquam. Cras dapibus ut dolor ut eleifend. Nam mattis ligula pretium, maximus lorem at, pretium nunc. Mauris at nulla porta velit bibendum fermentum.
+</p>
+   </article>
+
+
+
+</body>
+</html>

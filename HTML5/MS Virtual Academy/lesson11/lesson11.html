@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Forms - Validation</title>
+ </head>
+
+ <body>
+
+<form method="POST" action="form.aspx">
+
+ <h3>Email</h3>
+ <p><label>Email Input: <input type="email" name="emailId" required></label></p>
+
+ <h3>Telephone</h3>
+ <p><label>Telephone: <input type="tel" name="telephone" required></label></p>
+
+ <h3>URL</h3>
+ <p><label>URL Input: <input type="url" name="urlLink" required></label></p>
+
+ <h3>Numeric Values</h3>
+ <p><label>Number Input: <input type="number" name="numberInput" required></label></p>
+
+ <h3>Range</h3>
+ <p><label>Range Input: <input type="range" name="rangeInput" value="46" required></label></p>
+
+ <h3>Datalist</h3>
+ <p><label>Data List</label>
+    <input type="text" list="someList">
+      <datalist id="someList">
+        <option label="1st" value="First">
+        <option label="2nd" value="Second">
+        <option label="3rd" value="Third">
+      </datalist>
+    </input>
+ </p>
+
+ <h3>Autofocus</h3>
+ <p><label>Autofocus: <input type="text" autofocus></label> This field is focused when the page loads</p>
+
+ <h3>Pattern</h3>
+ <p><label>Pattern: <input type="text" pattern="^\d{5}(-\d{4})?$"></label> Requires a 5 digit code.</p>
+
+ <h3>Placeholder</h3>
+ <p><label>Placefolder: <input type="text" placeholder="Hello world!"></label></p>
+
+ <h3>Step</h3>
+ <p><label>Step: <input type="number" step="5" min="0" max="50"></label> Must be divisible by 5. min and max attributes have been set.</p>
+
+ <p><button type="submit">Submit</button></p>
+
+</form>
+
+ </body>
+</html>

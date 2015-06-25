@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta author="Adeleke Adelaja">
+  <title>Video and Audio Page</title>
+
+  <script>
+    
+    function failed(e) {
+     //video playback failed - show a message saying why
+      switch(e.target.error.code) {
+        case e.target.error.MEDIA_ERR_ABORTED:
+          alert('You aborted the video playback.');
+          break;
+        case e.target.error.MEDIA_ERR_NETWORK:
+          alert('A network error caused the video download to fail part-way;');
+          break;
+        case e.target.error.MEDIA_ERR_DECODE:
+          alert('The video playback was aborted due to a corruption problem or because your browser does not support features used by the video.');
+          break;
+        case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+          alert('The video could not be loaded, either because the server or network failed or because the format is not supported.');
+          break;
+        default:
+          alert('An unknown error occured.');
+          break;
+      }
+    }
+  </script>
+
+  <style>
+     .video-bg { background: black; 
+                 background-clip: content-box;
+                 border: thick double green; 
+                 padding: 10px; 
+     }
+  </style>
+</head>
+
+<body>
+ <header>
+   <button onclick="myFunction()" type="button">Change Video</button><br>
+ </header>
+
+ <article>
+   <section>
+     <article>
+       <video id="myvideo" class="video-bg" onerror="failed(event)" preload="metadata" height="400px" width="400px" controls autoplay>
+         <source id="mod04_src" src="media/04_04_modular.mp4" type="video/mp4">
+         <source id="pol_src" src="media/polina.mp4" type="video/mp4">
+       </video>
+     </article>
+   </section>
+   
+   <section>
+     <article>       
+       <audio src="media/Maid with the Flaxen Hair.mp3" autoplay controls loop></audio>
+     </article>
+   </section>
+
+ </article>
+
+ <footer>
+ </footer>
+ 
+<script> 
+
+var vid = document.getElementById("myvideo");
+var vid_source = document.getElementById("mod04_src");
+
+function myFunction() { 
+    
+    alert(vid_source.src);
+
+    if (vid_source.src == "media/04_04_modular.mp4") {
+        vid_source.src = "media/polina.mp4";
+    } else {
+        vid_source.src = "media/04_04_modular.mp4";
+    }
+
+    vid.load();
+} 
+</script> 
+
+
+</body>
+</html>
+
+

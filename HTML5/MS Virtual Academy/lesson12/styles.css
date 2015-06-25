@@ -1,0 +1,85 @@
+h1 {
+  font-family: Arial;
+  color: purple;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: greenyellow;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+a:visited {
+  color:darkgreen;
+}
+
+
+p:first-letter {
+  font-size: 3em;
+}
+
+
+article:before {
+  content: '=========================='; /* also content: url('http://goa.gif')*/
+}
+
+
+article:after {
+  content: '^^^^^^^^';
+}
+
+
+p:first-of-type {
+  margin-left: 200px;
+}
+
+
+li:first-child {
+  font-style: italic; 
+}
+
+
+li:last-child {
+ font-weight: bold;
+}
+
+
+li:nth-child(3) {
+  text-decoration: underline;
+}
+
+
+span[title] {
+  color: red;
+}
+
+
+span[title="first idea"] {
+  text-decoration: line-through !important; /* !important ensures that this style takes precedence*/
+}
+
+
+ul {
+  list-style-type: square;
+}
+
+
+ol {
+  list-style-type: number;
+}
+
+
+a[href^="email"] {       /* ^= implies begins with */
+  font-size: 2em;
+}
+
+
+span[title$="idea"] {    /* $= implies ends with */
+  text-decoration: overline;
+}

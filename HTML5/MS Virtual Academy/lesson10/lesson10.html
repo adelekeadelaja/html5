@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Forms - Creation</title>
+ </head>
+
+ <body>
+
+<form method="POST" action="form.aspx">
+ <p><label>Customer name: <input type="text" name="custName" maxlength="10" placeholder="e.g. John Doe" required></label></p>
+ <p><label>Telephone: <input type="tel" name="custTel"></label></p>
+ <p><label>E-mail address: <input type="email" name="custEmail"></label></p>
+
+ <fieldset>
+  <legend>Pizza Size</legend>
+  <p><label><input type="radio" name="size" value="small"> Small (10 inch) </label></p>
+  <p><label><input type="radio" name="size" value="medium" checked> Medium (14 inch) </label></p>
+  <p><label><input type="radio" name="size" value="large"> Large (18 inch) </label></p>
+ </fieldset>
+
+ <fieldset>
+  <legend> Pizza Toppings </legend>
+  <p><label><input type="checkbox" name="topping" value="bacon"> Bacon </label></p>
+  <p><label><input type="checkbox" name="topping" value="cheese"> Extra cheese </label></p>
+  <p><label><input type="checkbox" name="topping" value="onion" checked> Onion </label></p>
+ </fieldset>
+
+ <p>Crust: 
+   <select name="crust" multiple>
+     <option value="normal">Normal</option>
+     <option value="lasgidi">Lasgidi High (+ $3)</option>
+     <option value="abuja" selected>Abuja Sleek</option>
+   </select>
+ </p>
+ 
+ <p>
+   <label>Upload a file: <input type="file" accept="image/*"></label>
+ </p>
+
+ <p><label>Preferred delivery time: <input type="time" name="delTime" min="11:00" max="21:00" step="900"></label></p>
+
+ <p>
+   <label>Delivery comments: 
+     <textarea name="comments" cols="50" rows="5" maxlength="1000"></textarea>
+   </label>
+ </p>
+
+
+ <!-- <input type="submit" value="Submit order"> could also be used in place of <button> -->
+ <p><button type="submit">Submit order</button> <input type="reset" value="Reset values"></p>
+
+</form>
+
+ </body>
+</html>

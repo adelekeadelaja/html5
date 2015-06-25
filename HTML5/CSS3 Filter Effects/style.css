@@ -1,0 +1,163 @@
+/* CSS Image Filters */
+/* 
+All styles applied to the page which are not specified here are entirely Bootstrap effects. Go to http://getbootstrap.com/getting-started.
+*/
+
+body {
+	padding-top: 70px; }
+
+
+/** .dropdown class belongs to Bootstrap, 
+ ** however, I only wanted to add this rounded image effect.
+ **/
+
+.dropdown img {
+	border-radius: 50%;
+	border: 1px solid blue;
+	-webkit-border-radius: 50%;
+	-webkit-border: 1px solid blue;
+	-moz-border-radius: 50%;
+	-moz-border: 1px solid blue;      }
+
+
+/** Grayscale Effect **/
+
+.grayscale .row img {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);    }
+
+.grayscale .row img:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);    }
+
+
+
+/** Blur Effect **/
+
+.blur .row img {
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);      }
+
+.blur .row img:hover {
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);      }
+
+
+
+/** Sepia Effect **/
+
+.sepia .row img {
+	filter: sepia(1);
+	-webkit-filter: sepia(1);
+	-moz-filter: sepia(1);        }
+
+.sepia .row img:hover {
+	filter: sepia(0);
+	-webkit-filter: sepia(0);
+	-moz-filter: sepia(0);        }
+
+
+
+/** Invert Effect **/
+
+.invert .row img {
+	filter: invert(1);
+	-webkit-filter: invert(1);
+	-moz-filter: invert(1);       }
+
+.invert .row img:hover {
+	filter: invert(0);
+	-webkit-filter: invert(0);
+	-moz-filter: invert(0);       }
+
+
+
+/** Opacity Effect **/
+
+.opacity .row img {
+	/* filter: opacity(.3);  this also works*/ 
+	opacity: .3;
+	-webkit-opacity: .3;
+	-moz-opacity: .3;             }
+
+.opacity .row img:hover {
+	opacity: 1; 
+	-webkit-opacity: 1;
+	-moz-opacity: 1;              }
+
+
+
+/** Saturate Effect **/
+
+.saturate .row img {
+	filter: saturate(500%); 
+	-webkit-filter: saturate(5);
+	-moz-filter: saturate(500%);  }
+
+.saturate .row img:hover {
+	filter: saturate(100%);
+	-webkit-filter: saturate(1);
+	-moz-filter: saturate(1);     }
+
+
+/** Contrast Effect **/
+
+.contrast .row img {
+	filter: contrast(400%);
+	-webkit-filter: contrast(400%);
+	-moz-filter: contrast(4);      }
+
+.contrast .row img:hover {
+	filter: contrast(1);
+	-webkit-filter: contrast(1);
+	-moz-filter: contrast(1);      }
+
+
+
+/** Brightness Effect **/
+
+.brightness .row img {
+	filter: brightness(0.2);
+	-webkit-filter: brightness(0.2);
+	-moz-filter: brightness(0.2);   }
+
+.brightness .row img:hover {
+	filter: brightness(1);
+	-webkit-filter: brightness(1);
+	-moz-filter: brightness(1);     }
+
+
+/** Hue-Rotate Effect **/
+.huerotate .row img {
+	filter: hue-rotate(300deg);
+	-webkit-filter: hue-rotate(300deg);
+	-moz-filter: hue-rotate(90deg);  }
+
+.huerotate .row img:hover {
+	filter: hue-rotate(360deg);
+	-webkit-filter: hue-rotate(0deg);
+	-moz-filter: hue-rotate(0deg);   }
+
+
+
+/** Dropshadow Effect **/
+.dropshadow .row img {
+	/* drop-shadow(x-axis, y-axis, blur, color)*/
+	filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.8));
+	-webkit-filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.8));
+	-moz-filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.8)); }
+
+.dropshadow .row img:hover {
+	/* drop-shadow(x-axis, y-axis, blur, color)*/
+	filter: drop-shadow(0px 0px 0px);
+	-webkit-filter: drop-shadow(0px 0px 0px);
+	-moz-filter: drop-shadow(0px 0px 0px); }
+
+
+
+footer {
+	margin: 50px 0px;}

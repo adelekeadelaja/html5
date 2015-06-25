@@ -1,0 +1,103 @@
+﻿<title>Inner and Inclined Shadow Examples</title>
+<style>
+
+div.box {
+   -webkit-box-shadow: 0 7px 10px rgba(0,0,0,0.20)
+                     , 0px 0px 50px rgba(0,0,0,0.5) inset;
+
+   border: 2px solid Orange;
+   padding: 6px;
+   width: 200px;
+   height: 200px;
+   background: LightBlue;
+}
+
+
+
+.box h3{
+	position: relative; /* positioned relative to its normal position */
+	text-align: center;
+	top:80px;
+}
+
+
+
+
+/*==================================================
+ * Effect for first-div
+ * ===============================================*/
+.effect {
+  position: relative;
+}
+
+.effect:before {
+  z-index: -6;
+  position: absolute; /* positioned relative to the first parent */
+  content: "";
+  bottom: 30px;
+  left: 50%;
+  width: 50%;
+  top: 75%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px green;
+  -webkit-transform: rotate(8deg);
+}
+
+
+
+
+/*==================================================
+ * Effect 2 for second-div
+ * ===============================================*/
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+</style>
+
+
+
+
+<div id="first-div" class="box effect">
+   Here the shadow lies within.<br>
+   Black shadow given at the bottom<br>
+   Another inclined shadow, <mark>green</mark>, at the bottom right.
+</div>
+
+<br><br><br>
+
+<div id="second-div" class="box effect2">
+	<h3>Effect 2</h3>
+</div>

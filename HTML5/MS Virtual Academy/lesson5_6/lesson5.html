@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<!-- More Meta tags -->
+	<meta name="description" content="HTML and CSS3 tutorial lessons">
+	<meta name="author" content="Adeleke Adelaja">
+	<meta name="keyword" content="HTML5, CSS3,HTML">
+	<meta name="revised" content="Adeleke Adelaja, 14/06/2015">
+
+	<!-- This will automatically refresh the content of the page in seconds -->
+	<meta http-equiv="refresh" content="60" />
+
+	<title>Styling an HTML5 Web Page</title>
+	
+</head>
+
+<body>
+
+  <header>
+
+    <hgroup>
+      <h1>Connect Pathway</h1>
+      <h2>HTML5 and CSS3 on Windows Virtual Academy</h2>
+      <h3>Check <q>www.w3.org/TR/html5-author</q> for Global Attributes that could be applied</h3>
+    </hgroup>
+
+  </header>
+
+  <section>
+
+    <article>
+
+      <figure>
+
+        <img src="../images/me2.jpg" alt="A passport of me" >
+        <figcaption>
+          This is the caption for the image. <cite>Leke et al, 2015</cite>
+        </figcaption>
+
+      </figure>
+
+    </article>
+
+    <p><a href="http://www.bing.com" target="_blank">Bing website.</a> This an absolute url.</p>
+    <p><a href="../lesson4/lesson4.html">Lesson 4</a> This is a relative url</p>
+
+  </section>
+
+
+<section>
+
+ <p><a href="#bottom">To the bottom</a> A named anchor tag that allows you go to a specific part of the page.</p>
+
+
+ <p>This is the first paragraph. <del>This sentence marked to be deleted.</del></p>
+ <p><del>This sentence was marked to be deleted too.</del> That sentence needed a separate &lt;del&gt; element.</p>
+ <p><h3>Here are some tags to note in HTML5</h3>
+
+
+  The &lt;strong&gt; tag represents <strong>importance semantically in html5</strong>
+  <br>
+  The &lt;u&gt; tag represents <u>"unarticulated", a run of text that you want to call attention to because it is wrong.</u> Should not be used for merely underline purposes.
+  <br>
+  The &lt;mark&gt; tag is used for <mark>highlighting</mark> a portion of text for reference purposes. An example would be highlight of words that match a search criteria.
+  <br>
+  The &lt;em&gt; tag is used to <em><em>stress</em> emphasis</em> on a run of text. Or used for <em>keywords</em>.
+  <br>
+  The &lt;small&gt; tag is useful for small prints such as <small>disclaimer, legal restrictions or a copyright.</small>
+  <br><br>
+  
+  <blockquote cite="http://bing.com">
+    The &lt;blockquote&gt; basically is used to imply a quote.
+    <br>
+    The &lt;s&gt; tag is used for contents that are no longer valid but left in place for reference. An example below:
+    <br>
+    <p>Buy our Iced Tea and Lemonade</p>
+    <p><s>Recommended retail price: $3.99 per bottle</s></p>
+    <p><strong>Now selling for just $2.99 a bottle</strong></p>
+  </blockquote>
+  
+  <br>
+  The &lt;pre&gt; element ensures the indentation stays in place else html will not pay attention to any whitespace.
+  <br>
+  The &lt;code&gt; element represents a block of code.
+
+  <pre>
+  <code class="language-c">
+  void main() {
+	void addaccount();
+	void rectrans();
+	void viewbal();
+	int choice = 1;
+
+	while (choice != 4) {
+		clrscr();
+		printf("APTECH Banking System\n\n");
+		printf("Main Menu\n-----------------------\n");
+		printf("Select your transaction.");
+		printf("\n1. Add Customer Account.");
+		printf("\n2. Make a Withdrawal or Deposit");
+		printf("\n3. View Account Statement");
+		printf("\n4. Exit");
+
+		printf("\n\nChoice: ");
+		scanf("%d", &choice);
+
+		switch (choice) {
+		case 1:
+			addaccount();
+			break;
+		case 2:
+			rectrans();
+			break;
+		case 3:
+			viewbal();
+			break;
+		}
+	}
+  }
+  </code></pre>
+
+</P>
+
+</section>
+
+
+  <footer>
+    The footer goes here.
+  </footer>
+
+<a name="bottom">
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="revised" content="Adeleke Adelaja, 06/16/2015" >
+
+  <title>Tables Creation</title>
+</head>
+
+<body>
+  <h1>Tables<h1>
+  <h2>Jonathan Toews Stats</h2>
+
+<table border="1px">
+  <thead>
+    <th>Season</th>
+    <th>Goals</th>
+    <th>Assists</th>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>2009-2010</th>
+      <td>23</td>
+      <td>43</td>
+    </tr>
+
+    <tr>
+      <td colspan="3">Also played for Seattles in the season</td>
+    </tr>
+
+    <tr>
+      <th>2010-2011</th>
+      <td>33</td>
+      <td>46</td>
+    </tr>
+
+    <tr>
+      <th>2011-2012</th>
+      <td>16</td>
+      <td>22</td>
+    </tr>
+
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <td>72</td>
+      <td>111</td>
+    </tr>
+  </tfoot>
+</table>
+
+<fieldset name="clubfields" disabled>
+  <legend> <label>
+   <input type=checkbox name=club onchange="form.clubfields.disabled = !checked">
+   Use Club Card
+  </label> </legend>
+  <p><label>Name on card: <input name=clubname required></label></p>
+
+  <fieldset name="numfields">
+   <legend> <label>
+    <input type=radio checked name=clubtype onchange="form.numfields.disabled = !checked">
+    My card has numbers on it
+   </label> </legend>
+   <p><label>Card number: <input name=clubnum required pattern="[-0-9]+"></label></p>
+  </fieldset>
+
+  <fieldset name="letfields" disabled>
+   <legend> <label>
+    <input type=radio name=clubtype onchange="form.letfields.disabled = !checked">
+    My card has letters on it
+   </label> </legend>
+   <p><label>Card code: <input name=clublet required pattern="[A-Za-z]+"></label></p>
+ </fieldset>
+</fieldset>
+
+</body>
