@@ -7,6 +7,7 @@ div {
 width:200px; height:200px; background:red; position: relative;
 
 /* Normal Properties */
+border-radius: 100px;
 animation-name: myAnimate;
 animation-duration: 10s;
 animation-delay: 1s;
@@ -16,10 +17,11 @@ animation-direction: alternate; /* normal, reverse */
 animation-play-state: running; /* paused */
 
 /* Webkit Properties*/
+-webkit-border-radius: 100px;
 -webkit-animation-name: myAnimate;
 -webkit-animation-duration: 10s;
--webkit-animation-delay: 1s;
--webkit-animation-timing-function: cubic-bezier(30,10,4,11);
+-webkit-animation-delay: .5s;
+-webkit-animation-timing-function: ease;
 -webkit-animation-iteration-count: infinite;
 -webkit-animation-direction: alternate;
 -webkit-animation-play-state: running;
@@ -28,24 +30,23 @@ animation-play-state: running; /* paused */
 
 @keyframes myAnimate {
 
-  from {
-    background: yellow; left: 0;
-  }
-  to {
-    background: red; left: 300px; -webkit-transform: rotate(360deg);
-  }
+  0%   { background: red; left: 0; top: 0; }
+  25%  { background: yellow; left: 300px; top: 0; }
+  50%  { background: blue; left: 300px; top: 300px; }
+  75%  { background: green; left: 0; top: 300px; }
+  100% { background: red; left: 0; top: 0; }
 }
 
 
 @-webkit-keyframes myAnimate {
 
-  from {
-    background: yellow; left: 0;
-  }
-  to {
-    background: red; left: 300px; -webkit-transform: rotate(360deg);
-  }
+  0%   { background: red; left: 0; top: 0; }
+  25%  { background: yellow; left: 300px; top: 0; }
+  50%  { background: blue; left: 300px; top: 300px; }
+  75%  { background: green; left: 0; top: 300px; }
+  100% { background: red; left: 0; top: 0; }
 }
+
 
 </style>
 </head>

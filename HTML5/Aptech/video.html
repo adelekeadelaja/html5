@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Video Tag</title>
+<style>
+  video { 
+    background: black; 
+    height: 200px;
+    width: 300px;
+    float: left;
+  }
+
+</style>
+</head>
+
+<body>
+
+<h3>Preload = "none"</h3>
+<video loop controls muted preload="none">
+ <source src="media/04_04_modular.mp4" type="video/mp4">
+
+ <!-- The embed tag is used by older browsers -->
+ <embed src="media/.mp4" autostart="true" loop="true">
+
+ Your browser does not support the video element
+</video>
+
+
+<h3>Preload = "metadata"</h3>
+<video loop controls muted preload="metadata">
+ <source src="media/04_04_modular.mp4" type="video/mp4">
+
+ <!-- The embed tag is used by older browsers -->
+ <embed src="media/.mp4" autostart="true" loop="true">
+
+ Your browser does not support the video element
+</video>
+
+<h3>Preload = "auto"</h3>
+<video loop controls muted preload="auto">
+ <source src="media/04_04_modular.mp4" type="video/mp4">
+
+ <!-- The embed tag is used by older browsers -->
+ <embed src="media/.mp4" autostart="true" loop="true">
+
+ Your browser does not support the video element
+</video>
+
+</body>
+</html>

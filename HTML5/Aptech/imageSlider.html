@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Adeleke Adelaja" />
+<title>Sliding Description</title>
+
+<style>
+
+article.container-img { 
+   position: relative;
+   width: 400px; height: 500px;
+   border: 1px solid black;
+   background-image: url("me.jpg");
+   background-size: cover;
+   background-color: red;
+   overflow: hidden;
+}
+
+
+/* displays the tiny circle at the bottom right of the page */
+article.container-img:before {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   content: "+";
+   font-weight: 900;
+   font-family: Arial;
+   background: rgba(5,150,100,0.75);
+   text-align: center;
+   vertical-align: center;
+   line-height: 32px;
+   height: 32px; width: 32px;
+   border-radius: 16px;
+
+   /* automated animation to glow the tiny circle */
+   animation-name: myAnimate;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   -webkit-animation-name: myAnimate;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-iteration-count: infinite;
+}
+
+
+@keyframes myAnimate {
+  25%  {background: rgba(200,200,20,0.75); }
+  50%  {background: rgba(5,150,100,0.75); }
+  75%  {background: rgba(50,255,50,0.75); }
+  100% {background: rgba(5,150,100,0.75); }
+}
+
+@-webkit-keyframes myAnimate {
+  25%  {background: rgba(200,200,20,0.75); }
+  50%  {background: rgba(5,150,100,0.75); }
+  75%  {background: rgba(50,255,50,0.75); }
+  100% {background: rgba(5,150,100,0.75); }
+}
+
+
+article.content-caption {
+   position: absolute;
+   float: left;
+   top: 500px;
+   background: rgba(0,0,0,0.5);
+   color: white;
+   height: inherit; width: inherit;
+   text-align: justify;
+
+   transition-property: top;
+   transition-duration: 0.6s;
+   transition-delay: 0.1s;
+   transition-timing-function: ease;
+
+   -webkit-transition-property: top;
+   -webkit-transition-duration: 0.6s;
+   -webkit-transition-delay: 0.05s;
+   -webkit-transition-timing-function: ease;
+}
+
+/* hovering on the container-img to animate the content-caption */
+article.container-img:hover article.content-caption {
+   top: 400px;
+}
+
+/* hides the tiny circle at the bottom right */
+article.container-img:hover:before {
+  filter: opacity(0);
+  -webkit-filter: opacity(0);
+}
+
+article.container-img:hover {
+  box-shadow: 0 0 100px rgba(0,0,0,0.75) inset;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.75) inset;
+  
+}
+
+p { margin-left: 10px; margin-right: 10px;}
+
+</style>
+</head>
+
+<body>
+ <article class="container-img">
+   <article class="content-caption">
+     <p>That is me on a connecting flight in Abu Dhabi to Hyderabad, India.
+     It was on the <time value="2-3-2015">2nd March 2015</time><br>
+     What a memory!</p>
+   </article>
+ </article>
+</body>
+</html>
