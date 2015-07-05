@@ -1,1 +1,1 @@
-This contains my HTML projects and tests.
+My HTML related projects and tests.
