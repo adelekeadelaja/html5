@@ -1,0 +1,214 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed);
+
+
+/* Remove all CSS defaults */
+body, header, section, article, footer, aside, nav, div, h1, h2, h3, h4, h5, h6,
+p, a, table, th, tr, td, caption, figure, fig-caption, img, blockquote, pre, code,
+ul, ol, li, dl, dt, dd, video, audio
+{
+  margin: 0; padding: 0; left: 0; top: 0; vertical-align: bottom;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+body {
+  background: #FFFFFF;
+  font-family: Raleway, Roboto Condensed, Agenda-Light, Agenda Light, Agenda, 
+                 Arial Narrow, sans-serif;
+  //font-size: 1rem;
+  color: #000000;
+}
+
+header {
+  position: fixed;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+section#container {
+  padding-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section.video-bg {
+  height: 20rem;
+  width: 100%;
+}
+
+
+#top-bg-video {
+   position:fixed;
+   top: 50px;
+   left: 0;
+   maximum-width: 100%;
+   maximum-height: 100%;
+   height: auto;
+   width: auto;
+   z-index: -999;
+}
+
+
+/* Container for the Background Video Message */
+section.video-caption-wrapper {
+  position: relative;
+  width: 100%;
+  height: 20rem; 
+}
+
+/* Effect to Pause the Background Video */
+section.video-caption-wrapper:after {
+  position: absolute;
+  content: "P";
+  z-index: 50;
+  left: auto;
+  right: 10rem;
+  top: 2rem;
+  color: white;
+  font-weight: 800;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  vertical-align: center;
+  text-align: center;
+  background: rgba(0,0,0, 0.3);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+}
+
+
+section.article-wrapper-sm {
+  height: 24rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+}
+
+
+article.transparent {
+  background: rgba(10, 180, 25, 0.3);
+  color: white;
+  height: 20rem;
+  width: inherit;
+  text-align: center;
+  font-weight: 100;
+}
+
+article.opaque {
+  color: rgb(21,45,180);
+  height: 24rem;
+  font-weight: 100;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+section.background-mask-white {
+  background: white!important;
+}
+
+/* Album Art and Tracklist Sections*/
+.album-info-wrapper, .tracks-wrapper {
+  //width: 48%;
+  width: 40rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.tracks-wrapper {
+  height: 20rem;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #CCCCCC;
+}
+
+
+.img-wrapper {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  margin-right: 2rem;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+
+}
+
+img.artist-img-sm {
+  width: 20rem;
+  height: 20rem;
+}
+
+
+footer {
+  position: relative;
+  clear: both;
+}
+
+
+h1 {
+   padding-top: 5rem;
+   text-transform: uppercase;
+   font-size: 6rem;
+   letter-spacing: .2em;
+   font-family: Roboto Condensed;
+}
+
+
+h3 {
+   font-size: 2.4rem;
+   padding-bottom:2rem;
+}
+
+h4 {
+   font-size: 1.2rem;
+}
+
+h5 {
+   font-size: .7rem;
+}
+
+.color-smoked {
+   color: rgb(102, 129, 141)!important;
+}
+
+
+.bg-black-white-text {
+  background-color: black!important;
+  color: #FFFFFF!important;
+}
+
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: red;
+}
+
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-float {
+ clear: both;
+}
+
+} /* endof screen and (max-width: 1140px) */

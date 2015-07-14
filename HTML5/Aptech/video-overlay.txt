@@ -1,0 +1,548 @@
+<html>
+<body>
+<!-- Other html elements goes here before that occurs -->
+
+
+<div id="swipebox-overlay" style="width: 1366px; height: 422px;">
+ <div id="swipebox-container">
+  <div id="swipebox-slider" style="-webkit-transform: translate3d(0%, 0px, 0px); transform: translate3d(0%, 0px, 0px); display: block;">
+   <div class="slide current">
+    ::before
+    <div class="swipebox-video-container" style="max-width:1140px">
+     <div class="swipebox-video">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/7B76ZrdEKmk?fs=1&amp;autohide=1&amp;autoplay=1&amp;rel=0&amp;showinfo=0autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="swipebox-top-bar" class="" style="display: none;">
+   <div id="swipebox-title"></div>
+  </div>
+  <div id="swipebox-bottom-bar" class="" style="display: none;">
+   <div id="swipebox-arrows">
+    <a id="swipebox-prev" style="background-image: url(https://www.bark.com/img/icons.svg);" class="disabled"></a>
+    <a id="swipebox-next" style="background-image: url(https://www.bark.com/img/icons.svg);"></a>
+   </div>
+  </div>
+  <a id="swipebox-close" style="background-image: url(https://www.bark.com/img/icons.svg);"></a>
+ </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+CSS
+=================================================
+div#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#swipebox-overlay {
+  background: #25386E;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheetdiv {
+  display: block;
+}
+Inherited from 
+body {
+  color: #45423c;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 6em;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default;
+}
+Inherited from 
+html, body {
+  font-size: 100%;
+}
+Pseudo ::before element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+#swipebox-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/ajax-loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheetdiv {
+  display: block;
+}
+Inherited from 
+div#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+Inherited from 
+body {
+  color: #45423c;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 6em;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default;
+}
+Inherited from 
+html, body {
+  font-size: 100%;
+}
+Pseudo ::before element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+#swipebox-slider {
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheetdiv {
+  display: block;
+}
+Inherited from 
+div#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+Inherited from 
+body {
+  color: #45423c;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 6em;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default;
+}
+Inherited from 
+html, body {
+  font-size: 100%;
+}
+Pseudo ::before element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#swipebox-slider .slide {
+  height: 100%;
+  width: 100%;
+  line-height: 1px;
+  text-align: center;
+  display: inline-block;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheetdiv {
+  display: block;
+}
+Inherited from 
+#swipebox-slider {
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+Inherited from 
+div#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+Inherited from 
+body {
+  color: #45423c;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 6em;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default;
+}
+html, body {
+  font-size: 100%;
+}
+Inherited from 
+html, body {
+  font-size: 100%;
+}
+Pseudo ::before element
+#swipebox-slider .slide:before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 1px;
+  margin-right: -1px;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#swipebox-slider .slide .swipebox-video-container {
+  background: 0 0;
+  max-width: 1140px;
+  max-height: 100%;
+  width: 100%;
+  padding: 5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#swipebox-slider .slide .swipebox-inline-container, #swipebox-slider .slide .swipebox-video-container, #swipebox-slider .slide img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheetdiv {
+  display: block;
+}
+Inherited from 
+#swipebox-slider .slide {
+  height: 100%;
+  width: 100%;
+  line-height: 1px;
+  text-align: center;
+  display: inline-block;
+}
+Inherited from 
+#swipebox-slider {
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+Inherited from 
+div#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+Inherited from 
+body {
+  color: #45423c;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 6em;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default;
+}
+html, body {
+  font-size: 100%;
+}
+Inherited from 
+html, body {
+  font-size: 100%;
+}
+Pseudo ::before element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+Pseudo ::after element
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+#swipebox-slider .slide .swipebox-video-container .swipebox-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheetdiv {
+  display: block;
+}
+Inherited from 
+#swipebox-slider .slide {
+  height: 100%;
+  width: 100%;
+  line-height: 1px;
+  text-align: center;
+  display: inline-block;
+}
+Inherited from 
+#swipebox-slider {
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+Inherited from 
+div#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+#swipebox-slider .slide .swipebox-video-container .swipebox-video iframe {
+  width: 100%!important;
+  height: 100%!important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+iframe[Attributes Style] {
+  width: 560px;
+  height: 315px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+user agent stylesheetiframe {
+  border: 2px inset;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}

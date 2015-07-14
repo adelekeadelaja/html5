@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Events</title>
+
+    <!--
+          JQuery CDN included in the below script tag.
+          Visit JQuery website, in the Downloads section,
+          you would find a list of CDN e.g. Google, Microsoft
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <!-- Personal JavaScript file included here -->
+    <script type="text/javascript" src="script16.js"></script>
+
+
+
+    <!-- Styles included internally -->
+    <style>
+        #game {
+            width: 200px;
+            float: left;
+        }
+
+        #startover {
+            width: 100px;
+            height: 25px;
+            text-align: center;
+            padding-top: 5px;
+            float: right;
+        }
+
+        #switchImage {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            line-height: 30px;
+            background-color: #44AFFE;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+            #switchImage:hover {
+                background-color: black;
+            }
+
+        .hoverOut {
+            color: red;
+            background-color: yellow;
+        }
+
+        .hoverIn {
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>16. jQuery Events</h1>
+    <h3>Click-a-Bob Game</h3>
+
+
+    <div id="game">
+        <img id="bobhead" src="../images/me.jpg" height=120 width=100 style="border-radius: 0 5px 0; -webkit-border-radius: 0 5px 0;">
+        <div id="switchImage">switch image</div>
+        <p>SCORE: <span id="score">0</span></p>
+        <p id="success">You clicked-a-bob!</p>
+    </div>
+
+
+    <div id="startover">Start over</div>
+
+</body>
+</html>

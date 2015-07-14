@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>JavaScript Functions</title>
+
+ <script>
+
+function myDefFunction() {
+ alert("This is a default function");
+}
+
+myDefFunction();
+
+
+function myNewFunction(myValue) {
+ alert("Value entered is: " + myValue);
+}
+
+myNewFunction("Maximum Praise");
+
+
+function add(number1, number2) {
+ return eval(number1 + number2);
+}
+
+var result = add(3, 45);
+document.write("Addition of two numbers is:\n " + result);
+
+
+// passing multiple arguments
+
+function addN() {
+ var tempValue=0;
+
+ for(i=0; i < arguments.length; i++) {
+   tempValue += arguments[i];
+ }
+
+ return tempValue;
+}
+
+result = addN(7,2,1,8);
+document.write("<br>Multiple Args: " + result);
+
+result = addN(4, 8, 9);
+document.write("<br>Multiple Args: " + result);
+
+
+
+// Function Literal
+var addMe = function() {
+                var tempValue=0;
+
+                for(i in arguments) {
+                   tempValue += arguments[i];
+                }                
+                /*for(i=0; i < arguments.length; i++) {
+                   tempValue += arguments[i];
+                }*/
+                return tempValue;
+            }
+
+result = addMe(45, 2, 9, 1);
+document.write("<br>Function Literal: " + result);
+
+
+
+// Anonymous Function
+result = (function() {
+             return arguments[0] + arguments[1];
+          }) (3, 6);
+
+document.write("<br>Anonymous Function: " + result);
+
+ </script>
+</head>
+
+<body>
+ <h1>JavaScript Functions</h1>
+</body>
+</html>

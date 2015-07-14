@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>Conditional Logic in JavaScript</title>
+ <script type="text/javascript">
+ 
+var someValue = 23;
+
+if (someValue < 30) {
+ alert("first case");
+}
+
+var result = (someValue < 20)? "Value is greater" : "Not greater than";
+
+alert(result);
+
+myResult = (3 === "3")? "truthy" : "falsey"; // returns falsey
+alert(myResult);
+
+myResult = (3 == "3")? "truthy" : "falsey" // returns true
+alert(myResult);
+
+
+
+var rightNow = new Date();
+var currentHour = rightNow.getHours();
+
+switch(true) {
+ case (currentHour > 8 && currentHour < 12):
+   document.write(currentHour + " Morning, sunshine!");
+   break;
+ case (currentHour === 12):
+   document.write(currentHour + " Lunch time!");
+   break;
+ case (currentHour > 12 && currentHour < 18):
+   document.write(currentHour + " Fight the urge to siesta!");
+   break;
+ default:
+   document.write(currentHour + " Careful Sparky, they'll think you're a hard worker!");
+   break;
+}
+
+ </script>
+</head>
+
+<body>
+ <h1></h1>
+</body>
+</html>

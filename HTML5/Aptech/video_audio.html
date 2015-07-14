@@ -55,7 +55,7 @@
    
    <section>
      <article>       
-       <audio src="media/Maid with the Flaxen Hair.mp3" autoplay controls loop></audio>
+       <audio src="media/Maid with the Flaxen Hair.mp3" controls loop></audio>
      </article>
    </section>
 
@@ -65,15 +65,15 @@
  </footer>
  
 <script> 
-
 var vid = document.getElementById("myvideo");
 var vid_source = document.getElementById("mod04_src");
 
+
 function myFunction() { 
-    
+
     alert(vid_source.src);
 
-    if (vid_source.src == "media/04_04_modular.mp4") {
+    if (vid_source.src.match("04_04_modular")) {
         vid_source.src = "media/polina.mp4";
     } else {
         vid_source.src = "media/04_04_modular.mp4";

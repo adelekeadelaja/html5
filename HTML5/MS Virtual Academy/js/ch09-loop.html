@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>JavaScript Looping</title>
+
+ <script type="text/javascript">
+
+var playlist = [];
+playlist.push("Come on baby");
+playlist.push("It is not over");
+playlist.push("When a man loves a woman");
+
+// while
+  var i = 0;
+  
+  document.write("<u>While ... Execution</u>");
+  while(i < playlist.length) {
+    document.write("<br>" + playlist[i]);
+    i++;
+  }
+
+// for loop ...
+  document.write("<br><br><u>For loop ... Execution</u>");
+  for (i = 0; i < playlist.length; i++) {
+    document.write("<br>" + playlist[i]);
+  }
+
+
+// for in ...
+  document.write("<br><br><u>For in ... Execution</u>");
+  for (i in playlist) {
+    document.write("<br>" + playlist[i]);
+  }
+
+
+ </script>
+</head>
+
+<body>
+ <h1>Looping Statements in JavaScript</h1>
+</body>
+</html>

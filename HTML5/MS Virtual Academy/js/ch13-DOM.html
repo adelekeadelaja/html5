@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>JavaScript DOM</title>
+ <script type="text/javascript" src="script13.js"></script>
+</head>
+
+<body>
+ <h1>Document Object Model in JavaScript</h1>
+ <div>
+   <p>Here we will be referencing the elements by id directly from JavaScript</p>
+
+   <p id="second">
+     <strong>Second paragraph here</strong>
+   </p>
+ </div>
+
+ <!-- Because the script is in the head section,
+       it is likely that at the time the onclick event is referenced in js
+       the clickMe button has not  been created in the DOM.
+       Hence, it is more appropriate to have the script element just 
+       after the clickMe button or at the end of the page.
+
+       Alternatively, use the window.onload() method in js to ensure
+       all elements have been loaded. The Disadvantage is time to load all elements.
+ -->
+ 
+ <div>
+   <input id="clickMe" type="button" value="Click Me">
+   <a id="myAnchor" href="bing.com">Bing</a>
+ </div>
+</body>
+</html>
