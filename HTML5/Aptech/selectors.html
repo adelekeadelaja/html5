@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        /* attribute selector */
+        [data-guy] { color:green; }/* apply to all */
+        [data-lady $= 'gar'] { color: red; }/* ends with */
+        [data-lady ^= 'lip'] {color: blue; }/* begins with */
+
+        #div1 > p {font-weight: 900; }/* immediate decendants */
+
+        ul ~ div {font-size: 24px; }/* all div siblings of ul */
+
+        ul + table {text-decoration: line-through; }/* immediate sibling */
+
+        /* Psuedo element */
+        p::first-letter { color: rgb(220, 202, 220); }
+
+        /* Psuedo class */
+        /* p:first-child p:last-child p:nth-child(2n+1) */
+        
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>Lorem ipsum</p>
+        <div>Hi people!</div>
+        <ul>
+            <li data-guy="first li">Mistic</li>
+            <li data-lady="sugar">Leonardo Da Vinci</li>
+            <li data-lady="liposy">Michelangelo Simoni</li>
+        </ul>
+
+        <table>
+            <caption>Table 1</caption>
+            <tr><td>2012</td><td>32</td></tr>
+            <tr><td>2013</td><td>55</td></tr>
+        </table>
+        
+        <p>Make it run!</p>
+
+        <table>
+            <caption>Table 2</caption>
+            <tr><td>2012</td><td>32</td></tr>
+            <tr><td>2013</td><td>55</td></tr>
+        </table>
+
+        <div class="fancy">1 Lovely car</div>
+        <div class="fancy">2 Darling birds</div>
+        <div id="lorem">
+            <p>Lorem ipsum and some other latin stuffs live here</p>
+        </div>
+        
+    </div>
+</body>
+</html>

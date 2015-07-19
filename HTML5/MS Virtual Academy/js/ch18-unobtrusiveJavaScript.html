@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Unobtrusive JavaScript</title>
+    <!--
+          Unobtrusive JS implies that follow these techniques:
+          - Separation of Behavior from Markup i.e. keep js separate from html or css
+          - Namespace: keep your variables in an object
+          - Degrading Gracefully: failure in JS must not stop the page from loading
+    -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script18.js"></script>
+
+
+    <!-- Styles included internally -->
+    <style>
+      .belly-button {
+         border: 1px solid grey;
+         height: 20px; width: 20px;
+         border-radius: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <h1>18. Unobtrusive JavaScript</h1>
+
+    <p id="main">
+        
+    </p>
+
+    <p id="message">NOTICE! <br>
+    This paragraph and the rest of the page should be rendered. <br>
+    That is what unobtrusive means - JavaScript may be turned off.<br>
+    But our content should be displayed regardless.
+    </p>
+</body>
+</html>
+

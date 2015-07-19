@@ -1,63 +1,77 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="styles/miracles.css">
+    
+    <!-- link html template to page; script to load the template contents -->
+    <link rel="import" href="imports/template-header.html" id="template-header">
+    <script type="text/javascript" src="js/script-import.js"></script>
+    
+    <!-- main page script -->
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
-    <header>
-      <nav>Header and Navs</nav>
-    </header>
+    <header id="header-post"></header>
 
     <section id="container">
-      <section class="video-bg">
-        <video id="top-bg-video" mute autoplay loop poster="">
-            <source src="media/macmillan.mp4" type="video/mp4">
-            <source src="media/polina.mp4" type="video/mp4">
-        </video>
+        <section class="video-bg">
+            <video id="top-bg-video" mute autoplay poster="media/macmillan.png">
+                <source src="media/macmillan.mp4" type="video/mp4">
+            </video>
 
-        <section class="video-caption-wrapper">
-          <article class="transparent">
-              <h1>Miracles</h1>
-              <h3>Join the team that mastered the art of winning</h3>
-          </article>
+            <section class="video-caption-wrapper">
+                <article class="transparent">
+                    <h1>Miracles</h1>
+                    <h3>Join the team that mastered the art of music</h3>
+                </article>
+            </section>
         </section>
-      </section>
 
-      <section class="background-mask-white">
-        <section class="article-wrapper-sm">
-          <article class="opaque">
-              <div class="album-info-wrapper float-left">
-                <div class="img-wrapper float-left">
-                  <img class="artist-img-sm float-left index0" src="media/album-arts/asa.jpg">
-                  <img class="artist-img-sm float-left index1" src="media/album-arts/maroon5.jpg">
-                  <img class="artist-img-sm float-left index1" src="media/album-arts/india-arie.jpg">
-                  <img class="artist-img-sm float-left index1" src="media/album-arts/fun-band.jpg">
-                  <img class="artist-img-sm float-left index1" src="media/album-arts/amjad-ali-khan.jpg">
-                </div>
-                <aside class="float-left">
-                  <h3 class="color-smoked">A&#x1E63;a</h3>
-                  <h4 class="color-smoked">Album: Bed of Stone</h4>
-                  <h4 class="color-smoked">Track: Eyo</h4>
-                  <h5><a href="http://asa-official.com/" target="_blank" alt="Artist's website">asa-official.com</a></h5>
-                </aside>
-              </div>
-              <div class="tracks-wrapper float-left">
-                tracks here
-              </div>
-          </article>
+        <section class="background-mask-white">
+            <section class="article-wrapper-sm">
+                <article class="opaque pad-all">
+                    <section id="album-preview" class="album-info-wrapper float-left">
+                        <article class="art-wrapper float-left">
+                            <img id="art-m-1" class="album-art-m" src="media/album-arts/asa.jpg">
+                            <img id="art-m-2" class="album-art-m" src="media/album-arts/maroon5.jpg">
+                            <img id="art-m-3" class="album-art-m" src="media/album-arts/india-arie.jpg">
+                            <img id="art-m-4" class="album-art-m" src="media/album-arts/fun-band.jpg">
+                            <img id="art-m-5" class="album-art-m" src="media/album-arts/amjad-ali-khan.jpg">
+                        </article>
+                        <aside id="art-wrapper-info" class="float-left">
+                            <h3 class="color-smoked">A&#x1E63;a</h3>
+                            <h4 class="color-smoked">Album: Bed of Stone</h4>
+                            <h4 class="color-smoked">Track: Eyo</h4>
+                            <h5><a href="http://asa-official.com/" target="_blank" alt="Artist's website">asa-official.com</a></h5>
+                        </aside>
+                    </section>
+                    <section id="tracks-lists" class="tracks-wrapper float-left">
+                        <article id="track-list-1" class="track-line">
+                            <img />
+                            <article><p></p></article>
+                        </article>
+                    </section>
+                </article>
+            </section>
+
+            <section class="article-wrapper-sm clear-float">
+                <article class="opaque">
+                    Here is another article in another section.
+                </article>
+            </section>
         </section>
-      
-        <section class="article-wrapper-sm clear-float">
-          <article class="opaque">
-              Here is another article in another section.
-          </article>
-        </section>
-      </section>
     </section>
 
-    <footer class="bg-black-white-text">
-      <small>Copyright&copy; 2015 Powered by Adeleke.</small>
-    </footer>
+    <section id="overlay-wrapper">
+        <article>
+            <a id="close-overlay">X</a>
+            <p>Getting to know me.</p>
+        </article>
+    </section>
+
+
 </body>
 </html>

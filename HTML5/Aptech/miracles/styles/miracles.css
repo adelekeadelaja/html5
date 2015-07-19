@@ -4,211 +4,377 @@
 /* Remove all CSS defaults */
 body, header, section, article, footer, aside, nav, div, h1, h2, h3, h4, h5, h6,
 p, a, table, th, tr, td, caption, figure, fig-caption, img, blockquote, pre, code,
-ul, ol, li, dl, dt, dd, video, audio
-{
-  margin: 0; padding: 0; left: 0; top: 0; vertical-align: bottom;
+ul, ol, li, dl, dt, dd, video, audio {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    vertical-align: bottom;
 }
 
+    a:link {
+        text-decoration: none;
+    }
+
+
+
+    a:visited {
+        color: inherit;
+    }
+
+    a:hover {
+        color: #a0a0a0;
+    }
 
 
 @media screen and (max-width: 1400px) {
 
-body {
-  background: #FFFFFF;
-  font-family: Raleway, Roboto Condensed, Agenda-Light, Agenda Light, Agenda, 
-                 Arial Narrow, sans-serif;
-  //font-size: 1rem;
-  color: #000000;
+    body {
+        background: #FFFFFF;
+        font-family: Raleway, Roboto Condensed, Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+        color: #000000;
+    }
+
+    /* Header Contents */
+    header {
+        position: fixed;
+        line-height: 80px;
+        height: 80px;
+        width: 100%;
+        background: #FFFFFF;
+        z-index: 1000;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+
+        header > hgroup#logo {
+            width: 200px;
+            float: left;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        header > nav {
+            float: right;
+        }
+
+        header ul {
+            list-style: none;
+        }
+
+        header > nav > ul > li {
+            display: inline;
+            float: left;
+            text-align: center;
+            width: 100px;
+            height: 80px;
+            //cursor: pointer;
+        }
+
+            header > nav > ul > li:hover {
+                border-bottom: 4px solid #ff6a00;
+                box-sizing: border-box;
+                color: #ff0000;
+            }
+
+            header > nav > ul > li.select {
+                color: #ff0000;
+            }
+
+            header > nav > ul > li#offers > ul#offers-sub {
+                width: 550px;
+                float: right;
+                text-align: left;
+                line-height: 2rem;
+                background: rgba(0,0,0,0.9);
+                color: white;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+                header > nav > ul > li#offers > ul#offers-sub > li {
+                    display: inline;
+                    float: left;
+                    width: 150px;
+                    margin-left: 20px;
+                }
+
+                    header > nav > ul > li#offers > ul#offers-sub > li ul {
+                        font-size: .7rem;
+                    }
+
+    /* Body Container */
+    section#container {
+        padding-top: 80px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section.video-bg {
+        height: 20rem;
+        width: 100%;
+    }
+
+    /* Video in background */
+    #top-bg-video {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        z-index: -999;
+    }
+
+
+    /* Container for the Background Video Message */
+    section.video-caption-wrapper {
+        position: relative;
+        width: 100%;
+        height: 20rem;
+    }
+
+        /* Effect to Pause the Background Video */
+        section.video-caption-wrapper:after {
+            position: absolute;
+            content: "P";
+            z-index: 50;
+            left: auto;
+            right: 10rem;
+            top: 2rem;
+            color: white;
+            font-weight: 800;
+            width: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            vertical-align: middle;
+            text-align: center;
+            background: rgba(0,0,0, 0.3);
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+        }
+
+
+    section.article-wrapper-sm {
+        height: 24rem;
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+    }
+
+
+    article.transparent {
+        //background: rgba(10, 180, 25, 0.3);
+        color: white;
+        height: 20rem;
+        width: inherit;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    article.opaque {
+        color: rgb(21,45,180);
+        height: 24rem;
+        font-weight: 100;
+        box-sizing: border-box;
+    }
+
+    article.pad-all {
+        padding: 2rem;
+    }
+
+    section.background-mask-white {
+        background: white !important;
+    }
+
+    /* Album Art and Tracklist Sections*/
+    .album-info-wrapper, .tracks-wrapper {
+        width: 40rem;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .tracks-wrapper {
+        height: 20rem;
+        overflow-y: auto;
+        overflow-x: auto;
+        border: 1px solid #CCCCCC;
+    }
+
+
+    .art-wrapper {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        overflow: hidden;
+        margin-right: 2rem;
+        border-radius: 0.125rem;
+        -moz-border-radius: 0.125rem;
+        -webkit-border-radius: 0.125rem;
+    }
+
+    img.album-art-m {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    section#overlay-wrapper {
+        display: none;
+        background: #484343;
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+        z-index: 3333;
+    }
+
+        section#overlay-wrapper article {
+            position: absolute;
+            top: 50px;
+            bottom: 50px;
+            left: 20%;
+            right: 20%;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+
+    h1 {
+        padding-top: 5rem;
+        text-transform: uppercase;
+        font-size: 6rem;
+        letter-spacing: .2em;
+        font-family: Roboto Condensed;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        padding-bottom: 2rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5, small {
+        font-size: .7rem;
+        font-weight: normal;
+    }
+    
+    
+    /* Footer Contents */
+    footer {
+        //position: relative;
+        padding: 1rem;
+        height: 5rem;
+        clear: both;
+        background: #000000;
+        color: #c3c3c3;
+    }
+    
+    footer #copyright {
+        float: left;
+        width: 30%;
+    }
+    
+    footer #disclaimer {
+        float: left;
+        text-align: center;
+        width: 40%;
+    }
+    
+    footer #social-links {
+        float: right;
+        width: 30%;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 1.2rem;
+        letter-spacing: 1.5em;
+    }
+    
+    footer #social-links img {
+        background: white;
+        border-radius: 1px;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+    }
+
+    .color-smoked {
+        color: rgb(102, 129, 141) !important;
+    }
+
+
+
+
+    .float-left {
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    .clear-float {
+        clear: both;
+    }
+
+
+    /* Flex Layout */
+    section#container .photo-grid-space {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .flexbox {
+        position: relative;
+        margin-left: 25%;
+        margin-right: 25%;    
+    }
+
+    .flexbox > div {
+        margin-bottom: 10rem;
+    }
+
+    .flexbox > div > nav{
+        float: left;
+        width: 3%;
+        height: 106px;
+        border: 1px solid orange;
+        box-sizing: border-box;
+    }
+
+    .flexbox .flexboxer {
+        display: flex;
+        float: left;
+        flex-flow: row nowrap;
+        flex-basis: 100px;
+        width: 94%;
+        height: 106px;
+        border: 1px solid orange;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 2px;
+    }
+
+        .flexbox .flexboxer > img {
+            min-width: 100px;
+            min-height: 100px;
+            margin-right: 2px;
+        }
+        
+        .flexbox .flexboxer > img.last-flex-item {
+            margin-right: 0;
+        }
 }
-
-header {
-  position: fixed;
-  line-height: 50px;
-  height: 50px;
-  width: 100%;
-  background: #FFFFFF;
-  z-index: 1000;
-  box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
-
-section#container {
-  padding-top: 50px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-section.video-bg {
-  height: 20rem;
-  width: 100%;
-}
-
-
-#top-bg-video {
-   position:fixed;
-   top: 50px;
-   left: 0;
-   maximum-width: 100%;
-   maximum-height: 100%;
-   height: auto;
-   width: auto;
-   z-index: -999;
-}
-
-
-/* Container for the Background Video Message */
-section.video-caption-wrapper {
-  position: relative;
-  width: 100%;
-  height: 20rem; 
-}
-
-/* Effect to Pause the Background Video */
-section.video-caption-wrapper:after {
-  position: absolute;
-  content: "P";
-  z-index: 50;
-  left: auto;
-  right: 10rem;
-  top: 2rem;
-  color: white;
-  font-weight: 800;
-  width: 2rem;
-  height: 2rem;
-  line-height: 2rem;
-  vertical-align: center;
-  text-align: center;
-  background: rgba(0,0,0, 0.3);
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-}
-
-
-section.article-wrapper-sm {
-  height: 24rem;
-  width: 100%;
-  background: rgba(255, 255, 255, 1);
-}
-
-
-article.transparent {
-  background: rgba(10, 180, 25, 0.3);
-  color: white;
-  height: 20rem;
-  width: inherit;
-  text-align: center;
-  font-weight: 100;
-}
-
-article.opaque {
-  color: rgb(21,45,180);
-  height: 24rem;
-  font-weight: 100;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-section.background-mask-white {
-  background: white!important;
-}
-
-/* Album Art and Tracklist Sections*/
-.album-info-wrapper, .tracks-wrapper {
-  //width: 48%;
-  width: 40rem;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.tracks-wrapper {
-  height: 20rem;
-  overflow-y: auto;
-  overflow-x: auto;
-  border: 1px solid #CCCCCC;
-}
-
-
-.img-wrapper {
-  width: 20rem;
-  height: 20rem;
-  overflow: hidden;
-  margin-right: 2rem;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-
-}
-
-img.artist-img-sm {
-  width: 20rem;
-  height: 20rem;
-}
-
-
-footer {
-  position: relative;
-  clear: both;
-}
-
-
-h1 {
-   padding-top: 5rem;
-   text-transform: uppercase;
-   font-size: 6rem;
-   letter-spacing: .2em;
-   font-family: Roboto Condensed;
-}
-
-
-h3 {
-   font-size: 2.4rem;
-   padding-bottom:2rem;
-}
-
-h4 {
-   font-size: 1.2rem;
-}
-
-h5 {
-   font-size: .7rem;
-}
-
-.color-smoked {
-   color: rgb(102, 129, 141)!important;
-}
-
-
-.bg-black-white-text {
-  background-color: black!important;
-  color: #FFFFFF!important;
-}
-
-a:link {
-  text-decoration: none;
-  color: blue;
-}
-
-a:visited {
-  color: inherit;
-}
-
-a:hover {
-  color: red;
-}
-
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.clear-float {
- clear: both;
-}
-
-} /* endof screen and (max-width: 1140px) */
+/* endof screen and (max-width: 1140px) */
