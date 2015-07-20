@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1 style=color:green;>RegEx Examples</h1>
+    <form>
+        <!--
+          <h3>Accepts only 5 alphabets</h3>
+          <input type="text" pattern="[A-Za-z]{5}" placeholder="[A-Za-z]{5}" autofocus >
+
+          <h3>Accept minimum of 6 characters</h3>
+          <input type="text" pattern=".{6,}" placeholder=".{6,}" title="Six or more characters" >
+
+          <h3>Accept minimum of 5 Uppercase Alphabets and Numbers</h3>
+          <input type="text" pattern="[A-Z0-9]{5,}" placeholder="[A-Z0-9]{5,}" >
+
+          <h3>Must contain 8 or more characters that are of at least one number,
+               and one uppercase and lowercase</h3>
+          <input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain 8 or more characters that are of at least one number, one uppercase and lowercase" >
+
+
+
+          <h3>Regex for email using input=text instead of input=email</h3>
+          <input type="text" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}" placeholder="" >
+
+          <h3>you@domain.abc...</h3>
+          <input type="text" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9-.]+\.[a-zA-Z]{3,}" >
+
+          <h3>ABCD...@leke.ng</h3>
+          <input type="text" pattern="([a-zA-Z0-9._-]{4,})+@leke+\.ng" title="email name must be at least 4 xters followed by @leke.ng">
+        -->
+        <h3>Must contain http:// or https:// followed by at least a character</h3>
+        <blockquote>
+            <p>replace "." with "[0-9]" to ensure a number follows</p>
+            <p>replace "." with "(.{5,})" to ensure atleast 5 characters follows</p>
+            <p>the "s?" implies "s" is optional</p>
+            <p>removing the "+" implies only one character will follow</p>
+        </blockquote>
+        <input type="text" pattern="https?://.+" placeholder="https?://.+">
+
+        <h3>CANNOT contain the following characters: ' or " (is \x22)</h3>
+        <input type="search" name="search" pattern="[^'\x22]+" title="Invalid input">
+
+
+
+        <button type="submit" name="submit_btn" value="ok">Submit</button>
+    </form>
+</body>
+</html>
