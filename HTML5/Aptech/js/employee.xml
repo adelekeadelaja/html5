@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EMPLOYEES>
+    <EMPLOYEE>
+        <FIRSTNAME>Bob</FIRSTNAME>
+        <LASTNAME>Doe</LASTNAME>
+        <SALARY>&#x20b9; 4950</SALARY>
+        <ROLE>External Auditor</ROLE>
+    </EMPLOYEE>
+    <EMPLOYEE>
+        <FIRSTNAME>John</FIRSTNAME>
+        <LASTNAME>Jones</LASTNAME>
+        <SALARY>&#x20b9; 3200</SALARY>
+        <ROLE>General Manager</ROLE>
+        <ROLE>Finance Director</ROLE>
+    </EMPLOYEE>
+    <EMPLOYEE>
+        <FIRSTNAME>Peter</FIRSTNAME>
+        <LASTNAME>Smith</LASTNAME>
+        <SALARY>&#x20b9; 6000</SALARY>
+        <ROLE>Developer</ROLE>
+        <ROLE>Director</ROLE>
+        <ROLE>CEO</ROLE>
+    </EMPLOYEE>
+</EMPLOYEES>
