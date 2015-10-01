@@ -1,0 +1,184 @@
+{
+  "artists": [
+    {
+      "name": "Amjad Ali Khan",
+      "url": "http://sarod.com",
+      "alt": "sarod.com",
+      "album": [
+        {
+          "name": "Guldasta-e-Raga",
+          "track": "Raga Saraswati",
+          "url": "",
+          "images": [ "media/album-arts/amjad-ali-khan-s.jpg", "media/album-arts/amjad-ali-khan.jpg" ],
+          "audio": "media/audio/RagaSaraswati.mp3",
+          "video": "",
+          "year": 0,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "name": "Andrea Bocelli",
+      "url": "http://andreabocelli.com",
+      "alt": "andreabocelli.com",
+      "album": [
+        {
+          "name": "Sogno",
+          "track": "Sogno",
+          "url": "",
+          "images": [ "media/album-arts/andrea-bocelli-s.jpg", "media/album-arts/andrea-bocelli.jpg" ],
+          "audio": "media/audio/Sogno.mp3",
+          "video": "",
+          "year": 1999,
+          "label": "Polydor Records & Verve"
+        }
+      ]
+    },
+    {
+      "name": "Aṣa",
+      "url": "http://asa-official.com",
+      "alt": "asa-official.com",
+      "album": [
+        {
+          "name": "Aṣa (Asha)",
+          "track": "Bi’Ban Ké",
+          "url": "http://asa-official.com",
+          "images": [ "media/album-arts/asa-s.jpg", "media/album-arts/asa.jpg" ],
+          "audio": "media/audio/Bibanke.mp3",
+          "video": "",
+          "year": 2007,
+          "label": "Naïve Records"
+        }
+      ]
+    },
+    {
+      "name": "Fun",
+      "url": "http://ournameisfun.com",
+      "alt": "ournameisfun.com",
+      "album": [
+        {
+          "name": "Some Nights",
+          "track": "We Are Young",
+          "url": "",
+          "images": [ "media/album-arts/fun-s.jpg", "media/album-arts/fun.jpg" ],
+          "audio": "media/audio/WeAreYoung.mp3",
+          "video": "",
+          "year": 2012,
+          "label": "Fueled by Ramen"
+        }
+      ]
+    },
+    {
+      "name": "India Arie",
+      "url": "http://soulbird.com",
+      "alt": "soulbird.com",
+      "album": [
+        {
+          "name": "Testimony",
+          "track": "I Choose",
+          "url": "",
+          "images": [ "media/album-arts/india-arie-s.jpg", "media/album-arts/india-arie.jpg" ],
+          "audio": "media/audio/IChoose.mp3",
+          "video": "",
+          "year": 2006,
+          "label": "Motown Records"
+        }
+      ]
+    },
+    {
+      "name": "Cheikh Lô",
+      "url": "http://cheikhlomusic.com",
+      "alt": "cheikhlomusic.com",
+      "album": [
+        {
+          "name": "Balbalou",
+          "track": "Degg Gui (feat. Flavia Coelho & Fixi)",
+          "url": "",
+          "images": [ "media/album-arts/cheikh-lo-s.jpg", "media/album-arts/cheikh-lo.jpg" ],
+          "audio": "media/audio/DeggGui.mp3",
+          "video": "",
+          "year": 2015,
+          "label": "Chapter Two / Wagram Music"
+        }
+      ]
+    },
+    {
+      "name": "Marron 5",
+      "url": "http://maroon5.com",
+      "alt": "maroon5.com",
+      "album": [
+        {
+          "name": "Songs About Jane",
+          "track": "This Love",
+          "url": "",
+          "images": [ "media/album-arts/maroon5-s.jpg", "media/album-arts/maroon5.jpg" ],
+          "audio": "media/audio/ThisLove.mp3",
+          "video": "",
+          "year": 2002,
+          "label": "Octone"
+        }
+      ]
+    },
+    {
+      "name": "P!nk",
+      "url": "http://pinkspage.com",
+      "alt": "pinkspage.com",
+      "album": [
+        {
+          "name": "The Truth About Love",
+          "track": "Just Give Me A Reason (feat. Nate Ruess)",
+          "url": "",
+          "images": [ "media/album-arts/pink-s.jpg", "media/album-arts/pink.jpg" ],
+          "audio": "media/audio/JustGiveMeAReason.mp3",
+          "video": "",
+          "year": 2012,
+          "label": "RCA Records"
+        }
+      ]
+    },
+    {
+      "name": "Habib Koité",
+      "url": "http://habibkoite.com",
+      "alt": "habibkoite.com",
+      "album": [
+        {
+          "name": "Muso Ko",
+          "track": "Din Din Wo",
+          "url": "",
+          "images": [ "media/album-arts/habib-koite-muko-s.jpg", "media/album-arts/habib-koite-muko.jpg" ],
+          "audio": "media/audio/DinDinWo.mp3",
+          "video": "",
+          "year": 1995,
+          "label": "Alula Records"
+        },
+        {
+          "name": "Afriki",
+          "track": "Africa",
+          "url": "",
+          "images": [ "media/album-arts/habib-koite-afriki-s.jpg", "media/album-arts/habib-koite-afriki.jpg" ],
+          "audio": "media/audio/Africa.mp3",
+          "video": "",
+          "year": 2007,
+          "label": "Cumbancha"
+        }
+      ]
+    },
+    {
+      "name": "Michael Jackson",
+      "url": "http://michaeljackson.com",
+      "alt": "michaeljackson.com",
+      "album": [
+        {
+          "name": "Dangerous",
+          "track": "Heal The World",
+          "url": "",
+          "images": [ "media/album-arts/mj-s.jpg", "media/album-arts/mj.jpg" ],
+          "audio": "media/audio/HealTheWorld.mp3",
+          "video": "",
+          "year": 1997,
+          "label": "Epic"
+        }
+      ]
+    }
+  ]
+}

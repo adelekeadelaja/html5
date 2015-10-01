@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Web Worker</title>
+    
+    <script type="text/javascript">
+      var output;
+      var w;
+      
+      window.onload = function() {
+        output = document.getElementsByTagName("output")[0];
+      };
+      
+      function startWorker() {
+        // Check if Web Worker is supported
+        if(typeof(Worker) !== "undefined") {
+          // Web Worker is supported
+          if(typeof(w) == "undefined") {
+            w = new Worker("worker_longTask.js"); // create a Web Worker object
+          }
+          
+          w.onmessage = function(event) {
+            output.innerHTML = event.data; // data from postMessage is stored in event.data
+          };
+        }
+        else {
+          // Sorry, Web Worker not supported
+          output.innerHTML = "Web Worker is not supported.";
+        }
+      }
+      
+      function terminateWorker() {
+        w.terminate();
+        w = undefined;
+      }
+      
+    </script>
+  </head>
+
+  <body>
+    <h1>What is a Web Worker?</h1>
+    <output></output>
+    <p>
+      When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.<br>
+      A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the
+      performance of the page.<br>
+      You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.<br>
+      <br>
+      The <strong>postMessage()</strong> method - is used to post a message back to the HTML page.
+      <br>
+      If your application has multiple supporting javascript files, you can import using <strong>importScripts()</strong>
+      method which takes file name(s) as argument separated by comma as follows:
+      <blockquote>
+        importScripts("helper.js", "anotherHelper.js");
+      </blockquote>
+    </p>
+    <br>
+    <input id="startWorker" onclick="startWorker()" type="button" value="Start Worker" />
+    <input id="terminateWorker" onclick="terminateWorker()" type="button" value="Terminate Worker" />
+  </body>
+</html>

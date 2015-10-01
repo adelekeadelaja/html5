@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>CSS Text Properties</title>
+ <style>
+   body {
+     width: 30%;
+     margin-left: auto;
+     margin-right: auto;
+     border: 1px solid #00cc00;
+   }
+
+   h3 {
+     background-color: yellow;
+   }
+    
+   h5 {
+     text-indent: 20px;
+   }
+
+
+
+   <!-- @font-face rule for CSS3 -->
+
+   @font-face {
+    font-family: QaskinBlack_PersonalUse;
+    src: url(QaskinBlack_PersonalUse.ttf);
+   }
+
+   @font-face {
+    font-family: QaskinBlack_PersonalUse;
+    src: url(QaskinBlack_PersonalUse.ttf);
+    font-weight: bold;
+   }
+
+
+   div.fontface {
+    font-family: QaskinBlack_PersonalUse;
+   }
+
+ </style>
+</head>
+
+<body>
+ <p>
+  <h3>Font-Stretch - only in CSS3</h3>
+  <div class="fontface">Applying your kind of fonts.</div>
+  <h5 style="font-stretch: condensed;">Condensed</h5>
+  <h5 style="font-stretch: semi-condensed;">Semi-Condensed</h5>
+  <h5 style="font-stretch: extra-condensed;">Extra-Condensed</h5>
+  <h5 style="font-stretch: ultra-condensed;">Ultra-Condensed</h5>
+  <h5 style="font-stretch: expanded;">Expanded</h5>
+  <h5 style="font-stretch: semi-expanded;">Semi-Expanded</h5>
+  <h5 style="font-stretch: extra-expanded;">Extra-Expanded</h5>
+  <h5 style="font-stretch: ultra-expanded;">Ultra-Expanded</h5>
+ </P>
+
+ <p>
+  <h3>Font</h3>
+  <h5 style="font: 15px/30px arial, sans-serif, italic, bold;">15px/30px arial, sans-serif, italic, bold</h5>
+ </P>
+ <p>
+  <h3>Font-Family</h3>
+  <h5 style="font-family: times new roman;">Times New Roman</h5>
+  <h5 style="font-family: Arial, Georgia;">Arial, Georgia</h5>
+ </P>
+ <p>
+  <h3>Font-Size</h3>
+  <h5 style="font-size: 1.2em;">1.2em - em is recommended as it is browser fluid</h5>
+  <h5 style="font-size: 120%;">120% - % is also recommended as it is browser fluid</h5>
+  <h5 style="font-size: 12px;">12px - px is fixed; not browser fluid</h5>
+ </P>
+ <p>
+  <h3>Font-Style</h3>
+  <h5 style="font-style: normal;">Normal text</h5>
+  <h5 style="font-style: italic;">Italic text</h5>
+  <h5 style="font-style: oblique;">Oblique text</h5>
+ </P>
+ <p>
+  <h3>Font-Variant</h3>
+  <h5 style="font-variant: normal;">Normal variant</h5>
+  <h5 style="font-variant: small-caps;">Small-caps variant</h5>
+ </P>
+ <p>
+  <h3>Font-Weight</h3>
+  <h5 style="font-weight: normal;">Normal weight same as 400</h5>
+  <h5 style="font-weight: bold;">Bold weight same as 700</h5>
+  <h5 style="font-weight: lighter;">Lighter weight</h5>
+  <h5 style="font-weight: normal;">900 weight is the thickest</h5>
+ </P>
+
+ <hr>
+
+ <p>
+  <h3>Color</h3>
+  <h5 style="color: red;">Red</h5>
+  <h5 style="color: #00ff00;">#00ff00</h5>
+  <h5 style="color: rgb(0,0,255);">rgb(0,0,255)</h5>
+ </P>
+ <p>
+  <h3>Direction</h3>
+  <h5 style="direction: ltr;">ltr direction</h5>
+  <h5 style="direction: rtl;">rtl direction</h5>
+ </P>
+ <p>
+  <h3>Letter-Spacing</h3>
+  <h5 style="letter-spacing: 2px;">Letters 2px spaced.</h5>
+  <h5 style="letter-spacing: -20px;">Letters -20px spaced.</h5>
+  <h5 style="letter-spacing: 1em;">Letters 1em spaced.</h5>
+ </P>
+ <p>
+  <h3>Line-Height</h3>
+  <h5 style="line-height: 70%">Line height is 70%<br>
+       Line height is 70%</h5>
+  <h5 style="line-height: 200%">Line height is 200%</h5>
+ </P>
+ <p>
+  <h3>Text-Align</h3>
+  <h5 style="text-align: left;">Left aligned</h5>
+  <h5 style="text-align: right;">Right aligned</h5>
+  <h5 style="text-align: center;">Center aligned</h5>
+  <h5 style="text-align: justify;">Justify aligned</h5>
+ </P>
+ <p>
+  <h3>Text-Decoration</h3>
+  <h5 style="text-decoration: none;">None text-decoration</h5>
+  <h5 style="text-decoration: underline;">Underline text</h5>
+  <h5 style="text-decoration: overline;">Overline text</h5>
+  <h5 style="text-decoration: line-through;">Line-through text</h5>
+ </P>
+ <p>
+  <h3>Text-Indent</h3>
+  <h5 style="text-indent: 50px;">Text-indent by 50px</h5>
+  <h5 style="text-indent: 10px;">Text-indent by 10px</h5>
+ </P>
+ <p>
+  <h3>Text-Shadow</h3>
+  <h5 style="text-shadow: 2px 2px 8px #ff0000">2px 2px 8px #ff0000 i.e. h-shadow v-shadow blur-radius color</h5>
+ </P>
+ <p>
+  <h3>Text-Transform</h3>
+  <h5 style="text-transform: uppercase;">uppercase text</h5>
+  <h5 style="text-transform: lowercase;">Lowercase Text</h5>
+  <h5 style="text-transform: capitalize;">capitalize text</h5>
+ </P>
+ <p>
+  <h3>Vertical-Align</h3>
+   <div style="font-size: 2em;">
+    Vertically <span style="vertical-align: 10px; font-size:.7em;">aligned</span> by 10px<br>
+    Vertically <span style="vertical-align: 50%; font-size:.7em;">aligned</span> by 50%<br>
+    Vertically <span style="vertical-align: -30%; font-size:.7em;">aligned</span> by -30%<br>
+    Vertically <span style="vertical-align: baseline; font-size:.7em;">aligned</span> by baseline<br>
+    Vertically <span style="vertical-align: sub; font-size:.7em;">aligned</span> by sub<br>
+    Vertically <span style="vertical-align: super; font-size:.7em;">aligned</span> by super<br>
+    Vertically <span style="vertical-align: top; font-size:.7em;">aligned</span> by top<br>
+    Vertically <span style="vertical-align: text-top; font-size:.7em;">aligned</span> by text-top<br>
+    Vertically <span style="vertical-align: middle; font-size:.7em;">aligned</span> by middle<br>
+    Vertically <span style="vertical-align: bottom; font-size:.7em;">aligned</span> by bottom<br>
+    Vertically <span style="vertical-align: text-bottom; font-size:.7em;">aligned</span> by text-bottom<br>
+
+   </div>
+ </P>
+ <p>
+  <h3>White-Space</h3>
+  <h5 style="white-space: normal;">W3Schools   is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding</h5>
+  <h5 style="white-space: nowrap;">W3Schools   is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding</h5>
+  <h5 style="white-space: pre;">W3Schools   is optimized for learning
+         , testing, and training. 
+               Examples might be simplified to improve    
+                   reading and basic understanding</h5>
+  <h5 style="white-space: pre-line;">W3Schools   is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding</h5>
+  <h5 style="white-space: pre-wrap;">W3Schools   is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding</h5>
+ </P>
+ <p>
+  <h3>Word-Spacing</h3>
+  <h5 style="word-spacing: 30px">Words spaced by 30px</h5>
+  <h5 style="word-spacing: -5px">Words spaced by -5px</h5>
+ </P>
+
+
+ <p><s>
+  <h3>Unicode-Bidi: this is not working correctly</h3>
+  <h5 style="text-direction: rtl;unicode-bidi:bidi-override;">Used with text-direction. bidi-override</h5>
+  <h5 style="text-direction: rtl;unicode-bidi:embed;">Used with text-direction. embed</h5>
+  <h5 style="text-direction: rtl;unicode-bidi:normal;">Used with text-direction. normal</h5>
+ </s></P>
+
+</body>
+</html>

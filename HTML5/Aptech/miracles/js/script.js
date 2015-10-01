@@ -27,6 +27,7 @@ $(function () {
 
 
     /* Overlay */
+    /*
     $('#about').click(function () {
         $('#overlay-wrapper').css({ 'display': 'block' });
         $('#container').hide();
@@ -36,4 +37,5 @@ $(function () {
         $('#overlay-wrapper').css({ 'display': 'none' });
         $('#container').show();
     });
+    */
 });

@@ -1,0 +1,112 @@
+﻿<title>Visibility and Display</title>
+<style>
+   .div-200-200 { height: 200px; width: 200px; }
+
+   .outlined {
+        outline-width: 10px;
+        outline-style: double;
+        outline-color: green;
+        border-padding: 20px;
+        
+        
+   }
+
+   .w-200 { width: 200px; }
+
+   .h-30 { height: 30px; }
+
+   .bg-yellow { background: yellow; }
+   
+   .bg-blue { background: blue; }
+
+   .bg-red { background: red; }
+   
+   h3 { margin: 30px 0 5px 0; }
+</style>
+
+<body>
+
+  <h1>Visibility - hidden, visible</h1>
+
+  <h3>Example 1</h3>
+  Second div has visibility set to <strong>hidden</strong>, which makes it invisible, however, it's space is reserved on the page.<br>
+  <div class="bg-red w-200">First</div>
+  <div class="bg-red w-200" style="visibility: hidden;">Second</div>
+  <div class="bg-red w-200">Third</div>
+
+
+  
+  <hr>
+  <h1>Display - none, block, inline</h1>
+    
+  <h3>Example 2</h3>
+  These div have their display set by default <strong>(block)</strong><br>
+  <div class="bg-red w-200">First</div>
+  <div class="bg-red w-200">Second</div>
+  <div class="bg-red w-200">Third</div>
+
+  <h3>Example 3</h3>
+  These div have their display set to <strong>inline</strong><br>
+  <div class="bg-red w-200" style="display: inline">First</div>
+  <div class="bg-red w-200" style="display: inline">Second</div>
+  <div class="bg-red w-200" style="display: inline">Third</div>
+
+  <h3>Example 4</h3>
+  <em>Second</em> div has display set to <strong>none</strong>, hence, it does not take up space on the page<br>
+  <div class="bg-red w-200">First</div>
+  <div class="bg-red w-200" style="display: none;">Second</div>
+  <div class="bg-red w-200">Third</div>
+
+
+  
+  <hr>
+  <h1>Border &amp; Outline - none, block, inline</h1>
+
+  <h3>Example 5</h3>
+  <div class="bg-yellow div-200-200">
+    200x200 px div. <br>No border, no padding.
+  </div>
+
+  <h3>Example 6</h3>
+  <div class="bg-yellow div-200-200" style="padding: 10px; border: 10px solid black;">
+    200x200 px div. <br>Padding: 10px; Border: 10px;
+  </div>
+
+  <h3>Example 7</h3>
+  <div class="bg-yellow div-200-200 outlined" style="padding: 10px; border: 10px solid black;">
+    200x200 px div. <br>Padding: 10px; <br>Border: 10px solid black;<br>
+    Outline-style, outline-width, outline-color applies
+  </div>
+
+
+  
+  <hr>
+  <h1>Cursor - pointer, text, wait, e-resize, w-resize, n-resize, ne-resize <br>, nw-resize, s-resize, se-resize, sw-resize</h1>
+
+  <h3>Example 8</h3>
+  <div class="bg-blue w-200 h-30" style="cursor: none; margin-bottom: 3px;">
+    cursor: none;
+  </div>
+  <div class="bg-blue w-200 h-30" style="cursor: text; margin-bottom: 3px;">
+    cursor: text;
+  </div>
+  <div class="bg-blue w-200 h-30" style="cursor: pointer; margin-bottom: 3px;">
+    cursor: pointer;
+  </div>
+  <div class="bg-blue w-200 h-30" style="cursor: wait; margin-bottom: 3px;">
+    cursor: wait;
+  </div>
+  <div class="bg-blue w-200 h-30" style="cursor: e-resize; margin-bottom: 3px;">
+    cursor: e-resize;
+  </div>
+  <div class="bg-blue w-200 h-30" style="cursor: ne-resize; margin-bottom: 3px;">
+    cursor: ne-resize;
+  </div>
+  <div class="bg-blue w-200 h-30" style="cursor: w-resize; margin-bottom: 3px;">
+    cursor: w-resize;
+  </div>
+
+
+
+
+</body>

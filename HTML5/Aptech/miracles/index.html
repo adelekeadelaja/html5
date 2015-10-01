@@ -10,6 +10,7 @@
     <script type="text/javascript" src="js/script-import.js"></script>
     
     <!-- main page script -->
+    <script type="text/javascript" src="js/script-artist.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 
@@ -35,26 +36,26 @@
                 <article class="opaque pad-all">
                     <section id="album-preview" class="album-info-wrapper float-left">
                         <article class="art-wrapper float-left">
-                            <img id="art-m-1" class="album-art-m" src="media/album-arts/asa.jpg">
-                            <img id="art-m-2" class="album-art-m" src="media/album-arts/maroon5.jpg">
-                            <img id="art-m-3" class="album-art-m" src="media/album-arts/india-arie.jpg">
-                            <img id="art-m-4" class="album-art-m" src="media/album-arts/fun-band.jpg">
-                            <img id="art-m-5" class="album-art-m" src="media/album-arts/amjad-ali-khan.jpg">
+                            <article id="arts-m">
+                              
+                            </article>
+                            <div class="player-dashboard">
+                                
+                            </div>
+                            <!-- album pictures imported through JSON-->
                         </article>
                         <aside id="art-wrapper-info" class="float-left">
-                            <h3 class="color-smoked">A&#x1E63;a</h3>
-                            <h4 class="color-smoked">Album: Bed of Stone</h4>
-                            <h4 class="color-smoked">Track: Eyo</h4>
-                            <h5><a href="http://asa-official.com/" target="_blank" alt="Artist's website">asa-official.com</a></h5>
+                            <!-- album infomation imported through JSON -->
                         </aside>
                     </section>
-                    <section id="tracks-lists" class="tracks-wrapper float-left">
-                        <article id="track-list-1" class="track-line">
-                            <img />
-                            <article><p></p></article>
-                        </article>
+                    <section id="tracks-lists" class="tracks-wrapper float-right">
+                        <!-- track list loaded throught JSON -->
                     </section>
                 </article>
+                <audio id="audio-player" controls>
+                    <source src="" type="audio/mp3">
+                    Your browser does not support html5 audio.
+                </audio>
             </section>
 
             <section class="article-wrapper-sm clear-float">

@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head><title>List and Table Properties</title>
+ <style>
+   table { width: 60%; }
+   
+   .attention {background-color: Yellow; }
+ 
+   .border-1-black {border: 1px solid black; }
+
+   .border-collapse { border-collapse: collapse; }
+   
+   .text-align-right { text-align: right; }
+
+   .v-align-bottom { height: 100px; vertical-align: bottom;}
+   
+   .h-50 { height: 50px;}
+   .w-500 { width: 700px;}
+
+   #table2 {}
+ </style>
+</head>
+
+<body>
+
+<h1>Table Borders</h1>
+<table id="table1" class="border-1-black">
+ <caption>Caption: a black border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements
+ <tr>
+   <th class="border-1-black">First Column 
+   <th class="attention">Second Column
+   <th class="attention">Third Column
+ </tr> 
+ <tr>
+   <td class="border-1-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+ <tr>
+   <td class="border-1-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+<table>
+
+
+
+<h1>Collapse Borders: border-collapse value is collapse or seperate</h1>
+<table id="table2" class="border-collapse">
+ <caption>Caption: border-collapse property sets whether the table borders are collapsed into a single border or separated
+ <tr>
+   <th class="border-1-black">First Column 
+   <th class="border-1-black">Second Column
+   <th class="border-1-black">Third Column
+ </tr> 
+ <tr>
+   <td class="border-1-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+ <tr>
+   <td class="border-1-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+<table>
+
+
+
+<h1>Table Width and Height</h1>
+<table id="table3" class="w-500">
+ <caption>Caption: Width and height of a table is defined by the width and height properties
+ <tr>
+   <th class="border-1-black h-50 attention">First Column 
+   <th class="border-1-black">Second Column
+   <th class="border-1-black">Third Column
+ </tr> 
+ <tr>
+   <td class="border-1-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+ <tr>
+   <td class="border-1-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+<table>
+
+
+
+<h1>Horizontal Text Alignment && Caption-Side Change</h1>
+<table id="table4" class="border-1-black">
+ <caption style="caption-side: bottom" class="attention">Caption: The text-align property sets the horizontal alignment, like left, right, or center
+ <tr>
+   <th class="border-1-black text-align-right attention">First Column Aligned Right 
+   <th class="border-1-black">Second Column
+   <th class="border-1-black">Third Column
+ </tr> 
+ <tr>
+   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+ <tr>
+   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+<table>
+
+
+
+<h1>Vertical Alignment and Colspan</h1>
+<table id="table5" style="cell-padding: 0" class="border-1-black">
+ <caption>Caption: 
+ <tr>
+   <th class="border-1-black">First Column 
+   <th class="border-1-black attention" colspan="2">Second Column - colspan is 2
+   <th class="border-1-black">Third Column
+ </tr> 
+ <tr>
+   <td class="border-1-black v-align-bottom attention">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+ <tr>
+   <td class="border-1-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   <td class="border-1-black">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ </tr> 
+<table>
+
+</body>
+</html>
